@@ -1,0 +1,66 @@
+## 环境配置参考
+
+- 1. https://zhuanlan.zhihu.com/p/38178015 
+使用VSCode编写LaTeX（主windows）
+- 2. https://zhuanlan.zhihu.com/p/58811994
+2020搭建Latex环境：Texlive+VScode
+- 3. https://blog.csdn.net/IDzengkun/article/details/106594549
+centos 8安装 latex texlive
+- 4. https://zhuanlan.zhihu.com/p/55894177
+linux+git 版本控制
+## 安装
+### Linux
+TeXlive界面下载
+http://tug.org/texlive/acquire-netinstall.html
+
+```
+wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+tar -xzvf install-tl-unx.tar.gz
+#进入文件夹 默认有perl
+./install-tl -gui
+```
+漫长等待
+```
+#配置环境变量
+vim ~/.bashrc
+export PATH=PathtoTexlive/bin/x86_64-linux:$PATH
+```
+Linux建议编辑器还是TexStudio
+https://blog.csdn.net/IDzengkun/article/details/106594549
+
+### Windows
+清华镜像下载最新iso文件
+
+加载后找到install-tl-windows.bat 以管理员模式安装。
+
+漫长等待，可以勾选掉texwork和其他用不到的语言包。省空间，但是不省时间。
+
+## VSCode
+官网下载
+
+插件下载latex workshop
+
+## Texstudio
+https://blog.csdn.net/IDzengkun/article/details/106594549
+
+http://haccanri.github.io/tools/2015/04/22/tex_editor.html
+官方页面下载
+```
+sudo dnf ./file_name
+```
+
+## Latex排版语言教程
+与安装和配置环境无关
+
+https://latexstudio.net/hulatex/index.htm
+
+
+## 使用tips
+### 善用模板
+- 1. 各个journal网站下载
+- 2. latex工作室 https://latexstudio.net/hulatex/index.htm
+- 3. git 上有人共享
+
+
+### 善用搜索
+及时搜索出现的bug，版本要及时更新，定期检查兼容性。
